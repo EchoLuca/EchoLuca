@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoLuca</title>
+    <!-- FontAwesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Stili generali */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        /* Link per saltare il contenuto */
+        .skip-link {
+            position: absolute;
+            left: -1000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            width: auto;
+            height: auto;
+            background: #006eff;
+            color: #fff;
+            padding: 10px;
+            z-index: 1000;
+        }
+        header {
+            background: linear-gradient(135deg, #006eff, #00d4ff);
+            padding: 40px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        main {\n            /* Usa il tag main per il contenuto principale */\n            padding: 20px;\n        }
+        section {
+            margin: 30px;
+            padding: 25px;
+            background: #161b22;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 1.3em;
+            margin: 15px;
+            display: inline-block;
+            transition: 0.3s ease;
+        }
+        a:hover, a:focus {
+            color: #00d4ff;
+            transform: scale(1.1);
+            outline: none;
+        }
+        .social-icons i {
+            font-size: 2.5em;
+            margin: 15px;
+            color: #ffcc00;
+            transition: 0.3s ease;
+        }
+        .social-icons i:hover, .social-icons i:focus {
+            color: #ff9900;
+            transform: scale(1.2);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Link per saltare direttamente al contenuto -->
+    <a class="skip-link" href="#main">Salta al contenuto</a>
+    
+    <header role="banner">
+        <h1>EchoLuca</h1>
+        <p>Ciao, sono Luca, un ragazzo di 15 anni appassionato di informatica, videogiochi e moto.</p>
+    </header>
+    
+    <main id="main" role="main">
+        <section id="about">
+            <h2>Chi sono</h2>
+            <p>Mi chiamo Luca, ho 15 anni e frequento una scuola per operatore informatico. Fin da piccolo ho avuto una forte passione per la tecnologia, i videogiochi e le moto. Amo esplorare nuove tecnologie, sperimentare con il codice e migliorare continuamente le mie competenze nel mondo informatico.</p>
+            <p>Nel tempo libero, mi diverto a giocare ai videogiochi e scoprire le ultime novità del settore. Inoltre, le moto sono una delle mie più grandi passioni: mi affascina la loro velocità, il design e la libertà che offrono.</p>
+            <p>Il mio obiettivo è continuare a crescere nel mondo dell'informatica, sviluppare nuove abilità e, magari, in futuro creare qualcosa di innovativo.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contattami</h2>
+            <p>Email: <a href="mailto:lucaciotta2023@gmail.com">lucaciotta2023@gmail.com</a></p>
+            <p>Seguimi sui social:</p>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@lucaciottaa" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/lucaciottaa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo" style="padding: 20px; background: #161b22;">
+        <p>&copy; 2023 EchoLuca. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
